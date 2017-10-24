@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="25f5351f-d485-4374-b91f-f91235c04afc" name="MEBEL" url="http://мосмебельназаказ.рф">
+        <fileTransfer host="xn--80aaabtbpczghari9bzm.xn--p1ai" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
