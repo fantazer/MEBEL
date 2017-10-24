@@ -1427,7 +1427,9 @@ h2 a:focus {
     text-align: center; 
 }
 
-
+.item_list{
+	font-size: 16px;
+}
 @media (max-width: 1200px) {
 	.site-main article .entry-content .entry-title a {
 		font-size: 30px;

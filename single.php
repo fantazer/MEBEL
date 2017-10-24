@@ -8,6 +8,7 @@
  */
 
 get_header(); ?>
+
 <div class="container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -26,7 +27,33 @@ get_header(); ?>
 
 				endwhile; // End of the loop.
 				?>
-
+				<?
+				/*	global $the_term;
+					$values = CFS()->get( 'list' );
+					foreach ( $values as $term_id ) {
+					    $the_term = get_term($term_id);
+					}*/
+					global $the_term;
+					$the_term =  CFS()->get( 'list' )[0];
+				?>
+				<div class="entry-content">
+					<?
+						if(CFS()->get( 'list' )!=""){
+							$args = array(
+				        'cat'=> $the_term,
+				        'posts_per_page' => 100,
+				        'order' => 'ASC',
+				      );
+				      query_posts($args);
+				      while (have_posts()) : the_post();
+				    ?>
+				      <div class="item_list"><a href="<?php the_permalink();?>"><?=get_the_title();?></a></div>
+				    <?
+				      endwhile;
+				      wp_reset_query();
+				    }
+					?>
+				</div>
 				</div><!-- .col-lg-12 -->
 			</div><!-- .row -->
 
