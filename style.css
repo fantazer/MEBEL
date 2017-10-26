@@ -1430,6 +1430,40 @@ h2 a:focus {
 .item_list{
 	font-size: 16px;
 }
+
+.contact-table{
+	width: 100% !important;
+	max-width:600px;
+	overflow: auto;
+	display: block;
+}
+
+.form-page input,.form-page textarea{
+	width: 400px;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.print-page{
+	font-size:16px!important;
+	margin: 0 auto!important;
+	display: inherit!important;
+}
+
+@media print {
+    /* здесь будут стили для печати */
+    .form-page,
+    .footerbg,
+    .map-container,
+    #site-navigation,
+    iframe,
+    #primary-menu
+    {
+			display: none!important;
+    }
+}
+
+
 @media (max-width: 1200px) {
 	.site-main article .entry-content .entry-title a {
 		font-size: 30px;
@@ -1452,6 +1486,19 @@ h2 a:focus {
 
 
 @media (max-width: 768px) {
+	.form-page input,
+	.form-page textarea,
+	.form-page label
+	{
+		width: 100%;
+		padding: 10px;
+		font-size: 16px;
+		display: block;
+	}
+	
+	.contact-table{
+		font-size: 12px;
+	}
 	.site-header .contacts .address {
 		display: inline-block;
 	}

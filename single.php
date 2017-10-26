@@ -57,6 +57,7 @@ get_header(); ?>
 				</div><!-- .col-lg-12 -->
 			</div><!-- .row -->
 
+			<?echo "HELOOOW"; ?>
 			<?php get_sidebar(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->

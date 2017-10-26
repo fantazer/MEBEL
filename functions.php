@@ -1,4 +1,6 @@
 <?php
+
+
 /**
  * elite_mebel functions and definitions
  *
